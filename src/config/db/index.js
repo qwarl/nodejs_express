@@ -1,6 +1,6 @@
 // Using Node.js `require()`
 const mongoose = require('mongoose');
-
+//connect to mongodb
 async function connect() {
     try {
         await mongoose.connect('mongodb://localhost:27017/f8_education_dev', {
