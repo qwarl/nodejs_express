@@ -7,6 +7,7 @@ const Course = new Schema({
     image: { type: String },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
+    slug:{type:String},
 });
 //access to model (src/index.js will do it)
 module.exports=mongoose.model('Course', Course);//? const MyModel = mongoose.model('ModelName', mySchema);
